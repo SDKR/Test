@@ -1,0 +1,21 @@
+import java.io.*; 
+import java.net.*;
+//Imports every methods from Java.net, and Java.io. I guess the methods used below, comes from here.
+public class Main {
+
+	public static void main(String[] args) throws Exception
+	//Creates main method, and surronding it with an exception
+	{
+		DatagramSocket serverSocket = new DatagramSocket(7777);
+		//The datagramsocket lets you send and recieve packages via the chosen port. In this case, 9876.
+		byte[] receiveData = new byte[1024];
+		byte[] sendData = new byte[1024];
+		//Creates 2 arrays, which are able to hold 1024 bytes, which contains package information
+		while(true)
+		//While something returns true:
+		{
+			DatagramPacket receivePacket = new DatagramPacket(receiveData, receiveData.length);
+		}
+	}
+
+}

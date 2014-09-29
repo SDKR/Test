@@ -1,0 +1,17 @@
+import DatabaseLogic.DatabaseConnection;
+import java.sql.SQLException;
+
+public class Main {
+
+	//Creates main method
+	public static void main(String[] args) throws SQLException {
+		//Creates a new object of the classes Databaseconnection and defaultsettings
+		DatabaseConnection DC = new DatabaseConnection();
+		DefaultSetting DS = new DefaultSetting();
+		//Test connection to database, before it even start running, and if that is succeded, create database
+		DC.TestConnection();
+		DS.CreateDatabase();
+		
+		//If everything worked, run logic
+	}
+}

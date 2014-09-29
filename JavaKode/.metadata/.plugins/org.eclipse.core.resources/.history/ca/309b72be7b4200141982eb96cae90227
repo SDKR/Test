@@ -1,0 +1,19 @@
+
+public class messageClearing {
+	public String clearMessage (String message)
+	{
+		String clearedMessage = "";
+		
+		String character = in.next();
+		char c = character.charAt(0);
+		
+		if (Character.isDigit(c)) { 
+		   
+		} else if (Character.isLetter(c)) {
+		    
+		}
+		
+		return clearedMessage;
+	}
+
+}

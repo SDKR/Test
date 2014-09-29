@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;btnNewButton&apos; in &apos;GUI.WelcomeScreen&apos; to &apos;startBtn&apos;&#x0D;&#x0A;- Original project: &apos;YatzyApp&apos;&#x0D;&#x0A;- Original element: &apos;GUI.WelcomeScreen.btnNewButton&apos;&#x0D;&#x0A;- Renamed element: &apos;GUI.WelcomeScreen.startBtn&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;btnNewButton&apos;" flags="589826" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;GUI{WelcomeScreen.java[WelcomeScreen^btnNewButton" name="startBtn" references="true" setter="false" stamp="1405200839614" textual="false" version="1.0"/>
+</session>

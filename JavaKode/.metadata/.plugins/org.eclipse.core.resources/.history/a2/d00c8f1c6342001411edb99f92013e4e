@@ -1,0 +1,17 @@
+import java.io.*; 
+import java.net.*;
+
+public class MainClient {
+
+	public static void main(String[] args)throws Exception
+	{
+		BufferedReader inFromUser = new BufferedReader(new InputStreamReader(System.in));
+		//Creates a similiar method to Scanner, which gets the input of the user, and saves it.
+		DatagramSocket clientSocket = new DatagramSocket();
+		//The datagramsocket lets you send and recieve packages via the chosen port. In this case, 9876.
+		InetAddress IPAddress = InetAddress.getByName("localhost");
+		//Gets the InetAddress, by the name localhost. This means that it gets my IP.
+		System.out.println(IPAddress);
+	}
+
+}

@@ -1,0 +1,11 @@
+import java.io.*; 
+import java.net.*;
+//Imports every methods from Java.net, and Java.io. I guess the methods used below, comes from here.
+public class Main {
+
+	public static void main(String[] args) throws Exception {
+		DatagramSocket serverSocket = new DatagramSocket(9876);
+
+	}
+
+}
