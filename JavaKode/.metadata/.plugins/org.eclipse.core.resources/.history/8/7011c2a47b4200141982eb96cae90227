@@ -1,0 +1,20 @@
+
+public class messageClearing {
+	public String clearMessage (String message)
+	{
+		String clearedMessage = "";
+		
+		char c;
+		for( int x = 0; x<1024; x++ )
+		{	
+			c = clearedMessage.charAt(x);
+			if(!clearedMessage.isLetter(c))
+			{
+				
+			}
+		}
+		
+		return clearedMessage;
+	}
+
+}
