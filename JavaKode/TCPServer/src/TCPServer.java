@@ -4,13 +4,19 @@ import DatabaseLogic.DatabaseConnection;
 
 public class TCPServer {
 
-	public static void main(String[] args) throws Exception {
+	public TCPServer() throws Exception {
 		//Creates 2 string to hold random stuff
 		String clientSentence;
 		String capitalizedSentence;
 		//Creates a socket to send and recieve messages in port 8888
-		ServerSocket welcomeSocket = new ServerSocket(7777);
+		ServerSocket welcomeSocket;
+		try {
+			 welcomeSocket = new ServerSocket(7777);
+		
+	
 		DatabaseConnection DC = new DatabaseConnection();
+		System.out.println("Hej");
+		
 		//While something is true
 		while(true)
 		{
@@ -38,5 +44,9 @@ public class TCPServer {
 			outToClient.writeBytes(capitalizedSentence);
 			//BufferedWriter writer = new BufferedWriter(arg0)
 			}
-	 }
+	 
+	} catch (Exception e) {
+		e.getStackTrace();
+	}
+}
 }

@@ -10,7 +10,7 @@ public class TcpClient {
 		//Creates an object of buffered reader reading user input
 		BufferedReader inFromUser = new BufferedReader( new InputStreamReader(System.in));
 		//Creates a socket recieving and sending messages at IP localhost and port 8888
-		Socket clientSocket = new Socket("127.0.0.1", 7777);
+		Socket clientSocket = new Socket("localhost", 7777);
 		//
 		DataOutputStream outToServer = new DataOutputStream(clientSocket.getOutputStream());
 		BufferedReader inFromServer = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
