@@ -9,7 +9,7 @@ public class TCPServer {
 		String clientSentence;
 		String capitalizedSentence;
 		//Creates a socket to send and recieve messages in port 8888
-		ServerSocket welcomeSocket = new ServerSocket(8888);
+		ServerSocket welcomeSocket = new ServerSocket(7777);
 		DatabaseConnection DC = new DatabaseConnection();
 		//While something is true
 		while(true)
